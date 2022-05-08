@@ -5,7 +5,6 @@ import { ButtonProps } from 'antd';
 
 const ButtonStyled: React.FC<ButtonProps> = styled(AntButton)`
     // put some styles here
-    
 `;
 
 const Button: React.FC<ButtonProps> = ({ children, ...restProps }) => {
