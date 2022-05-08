@@ -1,10 +1,3 @@
-<style>
-a {
-    color: gold;
-    text-decoration: none;
-}
-</style>
-
 # daredevils-manager
 
 An app to manage groups of daredevils who penetrate unexplored dungeons under the city and make money from what they find there.
