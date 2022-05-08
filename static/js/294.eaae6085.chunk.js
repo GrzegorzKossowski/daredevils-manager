@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdaredevils_manager=self.webpackChunkdaredevils_manager||[]).push([[294],{294:function(e,n,a){a.r(n),a.d(n,{default:function(){return s}});a(791);var r=a(184),s=function(e){Object.assign({},e);return(0,r.jsx)(r.Fragment,{children:"HomePage"})}}}]);
+//# sourceMappingURL=294.eaae6085.chunk.js.map
