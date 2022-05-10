@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/daredevils-manager/static/css/main.4e5bed80.css",
-    "main.js": "/daredevils-manager/static/js/main.09c144f9.js",
+    "main.js": "/daredevils-manager/static/js/main.be53e5a7.js",
     "static/js/640.ccc811b3.chunk.js": "/daredevils-manager/static/js/640.ccc811b3.chunk.js",
-    "static/js/487.6a5ddbe4.chunk.js": "/daredevils-manager/static/js/487.6a5ddbe4.chunk.js",
+    "static/js/199.11fcd021.chunk.js": "/daredevils-manager/static/js/199.11fcd021.chunk.js",
     "static/js/380.06c50096.chunk.js": "/daredevils-manager/static/js/380.06c50096.chunk.js",
     "static/js/787.935de63c.chunk.js": "/daredevils-manager/static/js/787.935de63c.chunk.js",
     "static/js/63.c28ebda5.chunk.js": "/daredevils-manager/static/js/63.c28ebda5.chunk.js",
     "index.html": "/daredevils-manager/index.html",
     "main.4e5bed80.css.map": "/daredevils-manager/static/css/main.4e5bed80.css.map",
-    "main.09c144f9.js.map": "/daredevils-manager/static/js/main.09c144f9.js.map",
+    "main.be53e5a7.js.map": "/daredevils-manager/static/js/main.be53e5a7.js.map",
     "640.ccc811b3.chunk.js.map": "/daredevils-manager/static/js/640.ccc811b3.chunk.js.map",
-    "487.6a5ddbe4.chunk.js.map": "/daredevils-manager/static/js/487.6a5ddbe4.chunk.js.map",
+    "199.11fcd021.chunk.js.map": "/daredevils-manager/static/js/199.11fcd021.chunk.js.map",
     "380.06c50096.chunk.js.map": "/daredevils-manager/static/js/380.06c50096.chunk.js.map",
     "787.935de63c.chunk.js.map": "/daredevils-manager/static/js/787.935de63c.chunk.js.map",
     "63.c28ebda5.chunk.js.map": "/daredevils-manager/static/js/63.c28ebda5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e5bed80.css",
-    "static/js/main.09c144f9.js"
+    "static/js/main.be53e5a7.js"
   ]
 }
