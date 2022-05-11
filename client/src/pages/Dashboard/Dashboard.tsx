@@ -1,25 +1,39 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Layout, Menu, Result, MenuProps } from 'antd';
 import {
-    DesktopOutlined,
-    ShopOutlined,
-    CoffeeOutlined,
-    PieChartOutlined,
+    Avatar,
+    Button,
+    Divider,
+    Image,
+    Layout,
+    Menu,
+    MenuProps,
+    Result,
+    Space,
+    Typography,
+} from 'antd';
+import {
     BankOutlined,
+    CoffeeOutlined,
+    HomeOutlined,
+    PieChartOutlined,
+    ShopOutlined,
     TeamOutlined,
     UserOutlined,
-    HomeOutlined,
 } from '@ant-design/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faCoffee,
+    faSackDollar,
+    faChartSimple,
+} from '@fortawesome/free-solid-svg-icons';
+import DashboardHeader from './DashboardHeader/DashboardHeader';
 
 const { Header, Content, Footer, Sider } = Layout;
+const { Title } = Typography;
 
 interface IDashboardProps {}
 type MenuItem = Required<MenuProps>['items'][number];
-interface ExtendedMenu {
-    accessLvl: number;
-    menuItem: MenuItem;
-}
 
 function getItem(
     label: React.ReactNode,
@@ -56,24 +70,32 @@ const items: MenuItem[] = [
 ];
 
 export const Dashboard = ({ ...restProps }: IDashboardProps) => {
-    const [collapsed, setCollapsed] = React.useState(false);
-    const toggleCollapsed = () => {
-        setCollapsed(!collapsed);
-    };
+    // const [collapsed, setCollapsed] = React.useState(false);
+    // const toggleCollapsed = () => {
+    //     setCollapsed(!collapsed);
+    // };
     const onClick: MenuProps['onClick'] = e => {
-        console.log(e.key);        
+        console.log(e.key);
         // setCurrent(e.key);
-      };
+    };
     return (
         <>
             <Layout style={{ minHeight: '100vh' }}>
                 <Sider
-                    collapsible
-                    collapsed={collapsed}
-                    onCollapse={toggleCollapsed}
+                // collapsible
+                // collapsed={collapsed}
+                // onCollapse={toggleCollapsed}
                 >
-                    <div>Daredevils Manager</div>
-                    <div>Users name here</div>
+                    <Title
+                        style={{
+                            textAlign: 'center',
+                            margin: '10px 0',
+                            width: '100%',
+                        }}
+                        level={4}
+                    >
+                        Daredevils Manager
+                    </Title>
                     <Menu
                         theme='dark'
                         mode='inline'
@@ -83,16 +105,20 @@ export const Dashboard = ({ ...restProps }: IDashboardProps) => {
                     />
                 </Sider>
                 <Layout>
-                    <Result
-                        status='success'
-                        title='Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
-                        subTitle='Quae, consectetur! Voluptatibus nisi vitae repellendus officia deserunt quo totam omnis dolorum obcaecati sapiente, quia et eaque veniam, aperiam vel quisquam ipsam.'
-                        extra={
-                            <Link to={'/'}>
-                                <Button type='primary'>Back Home</Button>
-                            </Link>
-                        }
-                    />
+                    <DashboardHeader />
+                    <Content>
+                        <Result
+                            status='success'
+                            title='Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+                            subTitle='Quae, consectetur! Voluptatibus nisi vitae repellendus officia deserunt quo totam omnis dolorum obcaecati sapiente, quia et eaque veniam, aperiam vel quisquam ipsam.'
+                            extra={
+                                <Link to={'/'}>
+                                    <Button type='primary'>Back Home</Button>
+                                </Link>
+                            }
+                        />
+                    </Content>
+                    <Footer>Footer</Footer>
                 </Layout>
             </Layout>
         </>

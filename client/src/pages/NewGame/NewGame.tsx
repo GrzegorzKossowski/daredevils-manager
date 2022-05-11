@@ -10,22 +10,28 @@ import {
     Dropdown,
     message,
     Menu,
+    Radio,
 } from 'antd';
 import { ManOutlined, WomanOutlined, DownOutlined } from '@ant-design/icons';
 import CenteredContainer from 'components/molecules/CenteredContainer';
 import { getFemaleName, getMaleName } from 'data/randomNames';
+import { useAppDispatch } from 'hooks';
+import { setUserData } from 'redux/userSlice';
 
 interface INewGameProps {}
 
 export const NewGame = ({ ...restProps }: INewGameProps) => {
-    const [userName, setUserName] = useState('');
+    const [name, setName] = useState('');
+    const [sex, setSex] = useState('male');
+    const dispatch = useAppDispatch();
+
     const [form] = Form.useForm();
     let navigate = useNavigate();
 
     const onFinish = (values: any) => {
-        console.log('Received values of form: ', values);
+        dispatch(setUserData(values));
         form.resetFields();
-        navigate('/');
+        navigate('/dashboard');
     };
 
     const handleMenuClick = (event: any) => {
@@ -41,7 +47,7 @@ export const NewGame = ({ ...restProps }: INewGameProps) => {
                 break;
         }
         form.setFieldsValue({
-            username: name,
+            userName: name,
             sex: key,
         });
         message.info(`Generating ${key} name: ${name}.`);
@@ -70,25 +76,36 @@ export const NewGame = ({ ...restProps }: INewGameProps) => {
             <Form
                 form={form}
                 onFinish={onFinish}
-                initialValues={{ username: '', sex: 'male' }}
+                initialValues={{ userName: '', sex: 'male' }}
             >
                 <Form.Item
-                    name='username'
+                    name='userName'
                     rules={[
                         {
                             required: true,
                             message: 'Please input your username',
+                        },
+                        {
+                            max: 20,
+                            message: 'No more than 20 characters.',
                         },
                     ]}
                 >
                     <Input
                         autoComplete='off'
                         placeholder='Username'
-                        value={userName}
+                        value={name}
                     />
                 </Form.Item>
-                <Form.Item name='sex' hidden>
-                    <Input />
+                <Form.Item name='sex' label='Sex'>
+                    <Radio.Group value={sex}>
+                        <Radio value='male'>
+                            <ManOutlined /> male
+                        </Radio>
+                        <Radio value='female'>
+                            <WomanOutlined /> female
+                        </Radio>
+                    </Radio.Group>
                 </Form.Item>
                 <Form.Item>
                     <Space

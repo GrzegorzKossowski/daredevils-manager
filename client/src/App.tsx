@@ -2,10 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import LazySuspense from 'components/molecules/LazySuspense';
 import NewGame from 'pages/NewGame';
+import Dashboard from 'pages/Dashboard';
 
 const HomePage = React.lazy(() => import('./pages/HomePage'));
 // const NewGame = React.lazy(() => import('./pages/NewGame'));
-const Dashboard = React.lazy(() => import('./pages/Dashboard'));
+// const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 function App() {
