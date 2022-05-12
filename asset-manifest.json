@@ -1,19 +1,25 @@
 {
   "files": {
     "main.css": "/daredevils-manager/static/css/main.4e5bed80.css",
-    "main.js": "/daredevils-manager/static/js/main.175144e1.js",
-    "static/js/546.083a3bb8.chunk.js": "/daredevils-manager/static/js/546.083a3bb8.chunk.js",
+    "main.js": "/daredevils-manager/static/js/main.7975dd69.js",
+    "static/js/619.45712020.chunk.js": "/daredevils-manager/static/js/619.45712020.chunk.js",
+    "static/js/962.d4427c1f.chunk.js": "/daredevils-manager/static/js/962.d4427c1f.chunk.js",
     "static/js/380.06c50096.chunk.js": "/daredevils-manager/static/js/380.06c50096.chunk.js",
     "static/js/787.935de63c.chunk.js": "/daredevils-manager/static/js/787.935de63c.chunk.js",
+    "static/js/69.a4491d84.chunk.js": "/daredevils-manager/static/js/69.a4491d84.chunk.js",
+    "static/js/63.7bf9e485.chunk.js": "/daredevils-manager/static/js/63.7bf9e485.chunk.js",
     "index.html": "/daredevils-manager/index.html",
     "main.4e5bed80.css.map": "/daredevils-manager/static/css/main.4e5bed80.css.map",
-    "main.175144e1.js.map": "/daredevils-manager/static/js/main.175144e1.js.map",
-    "546.083a3bb8.chunk.js.map": "/daredevils-manager/static/js/546.083a3bb8.chunk.js.map",
+    "main.7975dd69.js.map": "/daredevils-manager/static/js/main.7975dd69.js.map",
+    "619.45712020.chunk.js.map": "/daredevils-manager/static/js/619.45712020.chunk.js.map",
+    "962.d4427c1f.chunk.js.map": "/daredevils-manager/static/js/962.d4427c1f.chunk.js.map",
     "380.06c50096.chunk.js.map": "/daredevils-manager/static/js/380.06c50096.chunk.js.map",
-    "787.935de63c.chunk.js.map": "/daredevils-manager/static/js/787.935de63c.chunk.js.map"
+    "787.935de63c.chunk.js.map": "/daredevils-manager/static/js/787.935de63c.chunk.js.map",
+    "69.a4491d84.chunk.js.map": "/daredevils-manager/static/js/69.a4491d84.chunk.js.map",
+    "63.7bf9e485.chunk.js.map": "/daredevils-manager/static/js/63.7bf9e485.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e5bed80.css",
-    "static/js/main.175144e1.js"
+    "static/js/main.7975dd69.js"
   ]
 }
