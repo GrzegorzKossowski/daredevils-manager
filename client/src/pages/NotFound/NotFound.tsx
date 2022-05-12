@@ -9,7 +9,7 @@ const NotFoundStyled = styled.div`
     // put some styles here
 `;
 
-export const NotFound: React.FC<INotFoundProps> = ({ ...restProps }) => {
+const NotFound: React.FC<INotFoundProps> = ({ ...restProps }) => {
     return (
         <NotFoundStyled>
             <Result
@@ -25,3 +25,5 @@ export const NotFound: React.FC<INotFoundProps> = ({ ...restProps }) => {
         </NotFoundStyled>
     );
 };
+
+export default NotFound;

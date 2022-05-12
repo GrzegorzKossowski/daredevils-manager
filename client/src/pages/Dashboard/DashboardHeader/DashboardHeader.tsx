@@ -1,15 +1,16 @@
-import { Avatar, Divider, Layout, Space, Tooltip } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { Avatar, Divider, Image, Layout, Space, Tooltip } from 'antd';
+import Icon, { UserOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSackDollar, faChartSimple } from '@fortawesome/free-solid-svg-icons';
 import { useAppSelector } from 'hooks';
+import AvatarProvider from 'components/molecules/AvatarProvider/AvatarProvider';
 
 const { Header } = Layout;
 
 interface IDashboardHeaderProps {}
 
 const DashboardHeader = ({ ...restProps }: IDashboardHeaderProps) => {
-    const { userName, moneyAmount, userLevel } = useAppSelector(
+    const { userName, moneyAmount, userLevel, sex } = useAppSelector(
         state => state.user
     );
     return (
@@ -23,7 +24,9 @@ const DashboardHeader = ({ ...restProps }: IDashboardHeaderProps) => {
                     {userLevel}
                 </Tooltip>
                 <Divider type='vertical' />
-                <Tooltip title={`Money amount. So far you have got ${moneyAmount} coins.`}>
+                <Tooltip
+                    title={`Money amount. So far you have got ${moneyAmount} coins.`}
+                >
                     <FontAwesomeIcon
                         icon={faSackDollar}
                         style={{ marginRight: '10px' }}
@@ -32,7 +35,16 @@ const DashboardHeader = ({ ...restProps }: IDashboardHeaderProps) => {
                 </Tooltip>
                 <Divider type='vertical' />
                 <span>{userName}</span>
-                <Avatar icon={<UserOutlined />} />
+                <div
+                    style={{
+                        width: '40px',
+                        height: '40px',
+                        overflow: 'hidden',
+                        borderRadius: '50%',
+                    }}
+                >
+                    <AvatarProvider sex={sex} width='40' height='40' />
+                </div>
             </Space>
         </Header>
     );

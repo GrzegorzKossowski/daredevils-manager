@@ -1,11 +1,9 @@
-import React, { BaseSyntheticEvent, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Button,
     Form,
     Input,
-    Row,
-    Col,
     Space,
     Dropdown,
     message,
@@ -17,6 +15,7 @@ import CenteredContainer from 'components/molecules/CenteredContainer';
 import { getFemaleName, getMaleName } from 'data/randomNames';
 import { useAppDispatch } from 'hooks';
 import { setUserData } from 'redux/userSlice';
+import AvatarProvider from 'components/molecules/AvatarProvider/AvatarProvider';
 
 interface INewGameProps {}
 
@@ -46,11 +45,15 @@ export const NewGame = ({ ...restProps }: INewGameProps) => {
                 name = getMaleName();
                 break;
         }
+        setSex(key);
         form.setFieldsValue({
             userName: name,
             sex: key,
         });
         message.info(`Generating ${key} name: ${name}.`);
+    };
+    const handleFormChange = () => {
+        setSex(form.getFieldValue('sex'));
     };
 
     const menu = (
@@ -73,10 +76,12 @@ export const NewGame = ({ ...restProps }: INewGameProps) => {
 
     return (
         <CenteredContainer>
+            <AvatarProvider sex={sex} width='256' height='256' />
             <Form
                 form={form}
                 onFinish={onFinish}
                 initialValues={{ userName: '', sex: 'male' }}
+                onChange={handleFormChange}
             >
                 <Form.Item
                     name='userName'

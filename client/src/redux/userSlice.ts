@@ -12,7 +12,7 @@ interface UserState {
 
 const initialState: UserState = loadState(localUserStateName) || {
     userName: 'John Doe',
-    moneyAmount: Math.floor(Math.random() * (1000 - 500)) + 500,
+    moneyAmount: 500,
     userLevel: 0,
     sex: 'male',
 };
@@ -24,6 +24,7 @@ export const userStateSlice = createSlice({
         setUserData: (state, { payload }: PayloadAction<UserState>) => {
             state.userName = payload.userName;
             state.sex = payload.sex;
+            state.moneyAmount = Math.floor(Math.random() * (1000 - 500)) + 500;
             saveState(localUserStateName, {
                 ...state,
                 ...payload,
