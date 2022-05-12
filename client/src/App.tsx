@@ -1,14 +1,16 @@
 import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import LazySuspense from 'components/molecules/LazySuspense';
+import { Button } from 'antd';
+import LazySuspense from 'components/LazySuspense';
 // import NewGame from 'pages/NewGame';
 import Dashboard from 'pages/Dashboard';
-import { Button } from 'antd';
+import Tavern from 'components/Tavern';
 
 const HomePage = React.lazy(() => import('./pages/HomePage'));
 const NewGame = React.lazy(() => import('./pages/NewGame'));
 // const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
+// const Tavern = React.lazy(() => import('components/Tavern/Tavern'));
 
 function App() {
     return (
@@ -38,48 +40,8 @@ function App() {
                     }
                 />
                 <Route
-                    path='guessNumber'
-                    element={
-                        <>
-                            guessNumber
-                            <Link to={'/'}>
-                                <Button type='primary'>Back Home</Button>
-                            </Link>
-                        </>
-                    }
-                />
-                <Route
-                    path='diceGame'
-                    element={
-                        <>
-                            diceGame
-                            <Link to={'/'}>
-                                <Button type='primary'>Back Home</Button>
-                            </Link>
-                        </>
-                    }
-                />
-                <Route
-                    path='sponsorDrinks'
-                    element={
-                        <>
-                            sponsorDrinks
-                            <Link to={'/'}>
-                                <Button type='primary'>Back Home</Button>
-                            </Link>
-                        </>
-                    }
-                />
-                <Route
-                    path='hireDardevil'
-                    element={
-                        <div>
-                            hireDardevil
-                            <Link to={'/'}>
-                                <Button type='primary'>Back Home</Button>
-                            </Link>
-                        </div>
-                    }
+                    path='tavern'
+                    element={<LazySuspense component={<Tavern />} />}
                 />
             </Route>
             <Route

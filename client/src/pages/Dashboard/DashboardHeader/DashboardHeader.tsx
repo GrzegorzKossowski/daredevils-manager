@@ -1,9 +1,8 @@
-import { Avatar, Divider, Image, Layout, Space, Tooltip } from 'antd';
-import Icon, { UserOutlined } from '@ant-design/icons';
+import { Divider, Layout, Space, Tooltip } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSackDollar, faChartSimple } from '@fortawesome/free-solid-svg-icons';
 import { useAppSelector } from 'hooks';
-import AvatarProvider from 'components/molecules/AvatarProvider/AvatarProvider';
+import AvatarProvider from 'components/AvatarProvider';
 
 const { Header } = Layout;
 

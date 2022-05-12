@@ -30,15 +30,18 @@ export const userStateSlice = createSlice({
                 ...payload,
             });
         },
+        incrementMoney: (state, { payload }: PayloadAction<number>) => {
+            state.moneyAmount += payload;
+        },
+        decrementMoney: (state, { payload }: PayloadAction<number>) => {
+            state.moneyAmount -= payload;
+        },
         setUserName: (state, action: PayloadAction<string>) => {
             state.userName = action.payload;
-        },
-        incrementMoneyByAmount: (state, action: PayloadAction<number>) => {
-            state.moneyAmount += action.payload;
         },
     },
 });
 
-export const { incrementMoneyByAmount, setUserName, setUserData } =
+export const { setUserName, setUserData, incrementMoney, decrementMoney } =
     userStateSlice.actions;
 export default userStateSlice.reducer;

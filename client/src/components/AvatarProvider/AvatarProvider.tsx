@@ -6,7 +6,7 @@ interface IAvatarProviderProps {
     height?: string;
 }
 
-const AvatarProvider = ({
+export const AvatarProvider = ({
     sex = 'male',
     width = '256',
     height = 'auto',
@@ -81,5 +81,3 @@ const AvatarProvider = ({
         </svg>
     );
 };
-
-export default AvatarProvider;

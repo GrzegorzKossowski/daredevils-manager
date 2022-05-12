@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { Layout, Menu, MenuProps, Typography } from 'antd';
-import {
-    HomeOutlined,
-} from '@ant-design/icons';
+import { HomeOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     fa3,
@@ -54,33 +52,7 @@ export const Dashboard = ({ ...restProps }: IDashboardProps) => {
             'tavern',
             <FontAwesomeIcon icon={faMugHot} />,
             0,
-            100,
-            [
-                getItem(
-                    'Guess number',
-                    'guessNumber',
-                    <FontAwesomeIcon icon={fa3} />,
-                    0
-                ),
-                getItem(
-                    'Play dice',
-                    'diceGame',
-                    <FontAwesomeIcon icon={faDice} />,
-                    0
-                ),
-                getItem(
-                    'Sponsor drinks',
-                    'sponsorDrinks',
-                    <FontAwesomeIcon icon={faChampagneGlasses} />,
-                    0
-                ),
-                getItem(
-                    'Hire a daredevil',
-                    'hireDardevil',
-                    <FontAwesomeIcon icon={faUserPen} />,
-                    0
-                ),
-            ]
+            100
         ),
         // getItem('Bank', 'sub1', <BankOutlined />, 2, undefined, [
         //     getItem('Usual client', '3', undefined, 1),

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button, Row, Col, Typography } from 'antd';
 import { Link } from 'react-router-dom';
-import CenteredContainer from 'components/molecules/CenteredContainer';
+import CenteredContainer from 'components/CenteredContainer';
 const { Title } = Typography;
 
 interface IHomePageProps {}
@@ -40,18 +40,15 @@ export const HomePage = ({ ...restProps }: IHomePageProps) => {
                         </Button>
                     </Link>
                     <Link to={'/dashboard'}>
-                        <Button
-                            disabled
-                            style={{ marginBottom: '10px', width: '100%' }}
-                        >
+                        <Button disabled style={{ marginBottom: '10px', width: '100%' }}>
                             Dashboard
                         </Button>
                     </Link>
-                    <Link to={'/notFound'}>
+                    {/* <Link to={'/notFound'}>
                         <Button style={{ marginBottom: '10px', width: '100%' }}>
                             Not Found Page
                         </Button>
-                    </Link>
+                    </Link> */}
                 </Col>
             </Row>
         </CenteredContainer>

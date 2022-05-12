@@ -11,11 +11,11 @@ import {
     Radio,
 } from 'antd';
 import { ManOutlined, WomanOutlined, DownOutlined } from '@ant-design/icons';
-import CenteredContainer from 'components/molecules/CenteredContainer';
+import CenteredContainer from 'components/CenteredContainer';
 import { getFemaleName, getMaleName } from 'data/randomNames';
 import { useAppDispatch } from 'hooks';
 import { setUserData } from 'redux/userSlice';
-import AvatarProvider from 'components/molecules/AvatarProvider/AvatarProvider';
+import AvatarProvider from 'components/AvatarProvider';
 
 interface INewGameProps {}
 
