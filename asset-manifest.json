@@ -1,30 +1,36 @@
 {
   "files": {
     "main.css": "/daredevils-manager/static/css/main.4e5bed80.css",
-    "main.js": "/daredevils-manager/static/js/main.efe3bc46.js",
+    "main.js": "/daredevils-manager/static/js/main.dbc78b3f.js",
     "static/js/619.c6229fdd.chunk.js": "/daredevils-manager/static/js/619.c6229fdd.chunk.js",
     "static/js/962.fc8a18da.chunk.js": "/daredevils-manager/static/js/962.fc8a18da.chunk.js",
     "static/js/380.ad974c7c.chunk.js": "/daredevils-manager/static/js/380.ad974c7c.chunk.js",
+    "static/js/296.dac52e80.chunk.js": "/daredevils-manager/static/js/296.dac52e80.chunk.js",
     "static/js/787.935de63c.chunk.js": "/daredevils-manager/static/js/787.935de63c.chunk.js",
-    "static/js/715.5ba41d17.chunk.js": "/daredevils-manager/static/js/715.5ba41d17.chunk.js",
+    "static/js/944.2be179e9.chunk.js": "/daredevils-manager/static/js/944.2be179e9.chunk.js",
+    "static/js/409.daf75b35.chunk.js": "/daredevils-manager/static/js/409.daf75b35.chunk.js",
     "static/js/63.c28ebda5.chunk.js": "/daredevils-manager/static/js/63.c28ebda5.chunk.js",
+    "static/media/bank.jpg": "/daredevils-manager/static/media/bank.ed9d2612a50793cd254c.jpg",
     "static/media/fighting.jpg": "/daredevils-manager/static/media/fighting.b3ca435b2dc50accd1fe.jpg",
     "static/media/dringing.jpg": "/daredevils-manager/static/media/dringing.d49d2de25ebe97354af7.jpg",
     "static/media/diceGame.jpg": "/daredevils-manager/static/media/diceGame.82ab74bc0be7f77407f1.jpg",
     "static/media/numbersGame.jpg": "/daredevils-manager/static/media/numbersGame.fa8c933b57a0b6f9652c.jpg",
     "static/media/beggar.jpg": "/daredevils-manager/static/media/beggar.18e11bcdd049722d18dd.jpg",
+    "static/media/noTavernEntry.jpg": "/daredevils-manager/static/media/noTavernEntry.6381ba184fe6ad332412.jpg",
     "index.html": "/daredevils-manager/index.html",
     "main.4e5bed80.css.map": "/daredevils-manager/static/css/main.4e5bed80.css.map",
-    "main.efe3bc46.js.map": "/daredevils-manager/static/js/main.efe3bc46.js.map",
+    "main.dbc78b3f.js.map": "/daredevils-manager/static/js/main.dbc78b3f.js.map",
     "619.c6229fdd.chunk.js.map": "/daredevils-manager/static/js/619.c6229fdd.chunk.js.map",
     "962.fc8a18da.chunk.js.map": "/daredevils-manager/static/js/962.fc8a18da.chunk.js.map",
     "380.ad974c7c.chunk.js.map": "/daredevils-manager/static/js/380.ad974c7c.chunk.js.map",
+    "296.dac52e80.chunk.js.map": "/daredevils-manager/static/js/296.dac52e80.chunk.js.map",
     "787.935de63c.chunk.js.map": "/daredevils-manager/static/js/787.935de63c.chunk.js.map",
-    "715.5ba41d17.chunk.js.map": "/daredevils-manager/static/js/715.5ba41d17.chunk.js.map",
+    "944.2be179e9.chunk.js.map": "/daredevils-manager/static/js/944.2be179e9.chunk.js.map",
+    "409.daf75b35.chunk.js.map": "/daredevils-manager/static/js/409.daf75b35.chunk.js.map",
     "63.c28ebda5.chunk.js.map": "/daredevils-manager/static/js/63.c28ebda5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e5bed80.css",
-    "static/js/main.efe3bc46.js"
+    "static/js/main.dbc78b3f.js"
   ]
 }
