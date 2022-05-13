@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/daredevils-manager/static/css/main.4e5bed80.css",
-    "main.js": "/daredevils-manager/static/js/main.dde2bb17.js",
-    "static/js/619.85df669c.chunk.js": "/daredevils-manager/static/js/619.85df669c.chunk.js",
+    "main.js": "/daredevils-manager/static/js/main.efe3bc46.js",
+    "static/js/619.c6229fdd.chunk.js": "/daredevils-manager/static/js/619.c6229fdd.chunk.js",
     "static/js/962.fc8a18da.chunk.js": "/daredevils-manager/static/js/962.fc8a18da.chunk.js",
     "static/js/380.ad974c7c.chunk.js": "/daredevils-manager/static/js/380.ad974c7c.chunk.js",
     "static/js/787.935de63c.chunk.js": "/daredevils-manager/static/js/787.935de63c.chunk.js",
@@ -15,8 +15,8 @@
     "static/media/beggar.jpg": "/daredevils-manager/static/media/beggar.18e11bcdd049722d18dd.jpg",
     "index.html": "/daredevils-manager/index.html",
     "main.4e5bed80.css.map": "/daredevils-manager/static/css/main.4e5bed80.css.map",
-    "main.dde2bb17.js.map": "/daredevils-manager/static/js/main.dde2bb17.js.map",
-    "619.85df669c.chunk.js.map": "/daredevils-manager/static/js/619.85df669c.chunk.js.map",
+    "main.efe3bc46.js.map": "/daredevils-manager/static/js/main.efe3bc46.js.map",
+    "619.c6229fdd.chunk.js.map": "/daredevils-manager/static/js/619.c6229fdd.chunk.js.map",
     "962.fc8a18da.chunk.js.map": "/daredevils-manager/static/js/962.fc8a18da.chunk.js.map",
     "380.ad974c7c.chunk.js.map": "/daredevils-manager/static/js/380.ad974c7c.chunk.js.map",
     "787.935de63c.chunk.js.map": "/daredevils-manager/static/js/787.935de63c.chunk.js.map",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.4e5bed80.css",
-    "static/js/main.dde2bb17.js"
+    "static/js/main.efe3bc46.js"
   ]
 }
